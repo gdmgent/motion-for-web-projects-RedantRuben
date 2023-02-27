@@ -28,13 +28,19 @@ p:hover {
 .button {
     background-color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    font-size: 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
+
+.button:active {
+    background-color: #e6a409;
+    transform: translateY(9px);
+}
 
