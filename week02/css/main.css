@@ -1,0 +1,96 @@
+body {
+    background-color: hsl(0, 0%, 10%);
+    overflow: hidden;
+}
+
+.circle {
+    width: 10vh;
+    height: 10vh;
+    background-color: hsl(200, 50%, 50%);
+    border-radius: 50%;
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ .circle2 {
+    width: 6vh;
+    height: 6vh;
+    background-color: hsl(0, 50%, 50%);
+    border-radius: 50%;
+    animation-name: zoom2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+@keyframes zoom {
+    0% {
+        transform: scale(5);
+        top: 0;
+        left: 90vw;
+        filter: blur(20px);
+    }
+    25% {
+        transform: scale(5);
+        top: 45vh;
+        left: 45vw;
+        filter: blur(20px);
+    }
+    50% {
+        transform: scale(5);
+        top: 0;
+        left: 0vw;
+        filter: blur(20px);
+    }
+    75% {
+        transform: scale(5);
+        top: 90vh;
+        left: 45vw;
+        filter: blur(20px);
+    }
+    100% {
+        transform: scale(5);
+        top: 0;
+        left: 90vw;
+        filter: blur(20px);
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        transform: scale(5);
+        top: 0;
+        left: 0;
+        filter: blur(20px);
+    }
+    25% {
+        transform: scale(5);
+        top: 90vh;
+        left: 45vw;
+        filter: blur(20px);
+    }
+    50% {
+        transform: scale(5);
+        top: 0;
+        left: 90vw;
+        filter: blur(20px);
+    }
+    75% {
+        transform: scale(5);
+        top: 45vh;
+        left: 45vw;
+        filter: blur(20px);
+    }
+    100% {
+        transform: scale(5);
+        top: 0;
+        left: 0;
+        filter: blur(20px);
+    }
+}
