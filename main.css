@@ -40,7 +40,8 @@ p:hover {
 
 
 .button:active {
-    background-color: #e6a409;
+    background-color: #000000;
+    color: #ffffff;
     transform: translateY(9px);
 }
 
