@@ -1,0 +1,156 @@
+*{
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+.btn:hover {
+    background-color: rgb(31, 208, 96);
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    margin-left: 40px;
+}
+
+nav a {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(172, 172, 172);
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+
+nav ul li {
+    margin-left: 50px;
+}
+
+.active {
+    color: white;
+}
+
+.section-a {
+    background-image: linear-gradient(45deg, rgb(24, 24, 24), rgb(37, 37, 37));
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 25px;
+}
+
+.section-a img {
+    width: 400px;
+    margin-left: 40px;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.section-a h2:hover {
+    text-decoration: underline;
+}
+
+.specifications {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.specifications .spec1 {
+    background-color: rgb(24, 24, 24);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.specifications .spec2 {
+    background-color: rgb(24, 24, 24);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.specifications .spec3 {
+    background-color: rgb(24, 24, 24);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.specifications .spec1:hover {
+    background-color: rgb(118, 118, 118);
+}
+
+.specifications .spec2:hover {
+    background-color: rgb(118, 118, 118);
+}
+
+.specifications .spec3:hover {
+    background-color: rgb(118, 118, 118);
+}
+

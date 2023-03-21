@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(184, 220, 239);
+}
+
+header {
+    nav {
+        background: rgb(113, 165, 190);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+                a {
+                    color: hsla(200, 50%, 20%, 1);
+                    text-decoration: none;
+                    padding: 1rem;
+                    display: block;
+                    &:hover {
+                        background: hsla(200, 50%, 20%, 1);
+                        color: hsla(200, 50%, 80%, 1);
+                    }
+                    &.active {
+                        background: hsla(200, 50%, 20%, 1);
+                        color: hsla(200, 50%, 80%, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: hsla(200, 50%, 20%, 1);
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}
+
+
+// Create a page for a product of your choice (sneakers, gin, smartphone, ...).
+
+// Minimum Requirements
+// The page contains at least:
+
+// 4 CSS transitions,
+// 2 CSS animations,
+// 1 CSS grid.
+// The page must also be responsive.No scripts should be used.
+
+// Write the html and css for the page
+// give it a very clean and modern style with smooth transmisions/animations
+
+
+$colors: 
+    "primary" hsla(100, 50%, 50%, 1),
+    "secondary" hsla(200, 50%, 50%, 1),
+    "tertiary" hsla(300, 50%, 50%, 1);
+
+@each $name, $color in $colors {
+    h1.#{$name} {
+        color: $color;
+    }
+    a.btn.#{$name} {
+         background-color: $color;
+         display: inline-block;
+         padding: 1rem;
+         text-decoration: none;
+         color: hsla(200, 50%, 80%, 1);
+         &:hover {
+             background-color: darken($color, 20%);
+         }
+    }
+}

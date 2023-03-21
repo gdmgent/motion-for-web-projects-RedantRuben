@@ -1,0 +1,88 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(184, 220, 239);
+}
+
+header nav {
+  background: rgb(113, 165, 190);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  color: hsl(200, 50%, 20%);
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+header nav ul li a:hover {
+  background: hsl(200, 50%, 20%);
+  color: hsl(200, 50%, 80%);
+}
+header nav ul li a.active {
+  background: hsl(200, 50%, 20%);
+  color: hsl(200, 50%, 80%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  color: hsl(200, 50%, 20%);
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+h1.primary {
+  color: hsl(100, 50%, 50%);
+}
+
+a.btn.primary {
+  background-color: hsl(100, 50%, 50%);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: hsl(200, 50%, 80%);
+}
+a.btn.primary:hover {
+  background-color: #407326;
+}
+
+h1.secondary {
+  color: hsl(200, 50%, 50%);
+}
+
+a.btn.secondary {
+  background-color: hsl(200, 50%, 50%);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: hsl(200, 50%, 80%);
+}
+a.btn.secondary:hover {
+  background-color: #265973;
+}
+
+h1.tertiary {
+  color: hsl(300, 50%, 50%);
+}
+
+a.btn.tertiary {
+  background-color: hsl(300, 50%, 50%);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: hsl(200, 50%, 80%);
+}
+a.btn.tertiary:hover {
+  background-color: #732673;
+}/*# sourceMappingURL=style.css.map */
