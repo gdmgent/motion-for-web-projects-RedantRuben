@@ -1,4 +1,4 @@
-*{
+* {
     transition: all 0.3s ease-in-out;
 }
 
@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    animation: glideUp 1s ease-in-out;
 }
 
 .btn {
@@ -29,6 +30,7 @@ body {
 .btn:hover {
     background-color: rgb(31, 208, 96);
     color: rgb(0, 0, 0);
+    animation: pulse 1s ease-in-out;
 }
 
 a {
@@ -59,6 +61,12 @@ nav {
 header img {
     width: 50px;
     margin-left: 40px;
+    transform: rotate(0deg);
+    transition: transform 1s ease-in-out;
+}
+
+header img:hover {
+    transform: rotate(360deg);
 }
 
 nav a {
@@ -93,15 +101,13 @@ nav ul li {
     margin-left: 150px;
     margin-right: 150px;
     border-radius: 25px;
+    transition: background-image 0.3s ease-in-out;
 }
 
-/* .section-a:hover {
-    /* border: 1px solid rgb(130, 29, 29); */
-
-.section-a img {
-    width: 400px;
-    margin-left: 40px;
+.section-a:hover {
+    background-image: linear-gradient(45deg, rgb(56, 56, 56), rgb(24, 24, 24) 50%, rgb(10, 10, 10));
 }
+
 
 .content h2 {
     font-size: 50px;
@@ -131,18 +137,36 @@ nav ul li {
     background-color: rgb(24, 24, 24);
     padding: 50px;
     border-radius: 25px;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.specifications .spec1:hover {
+    transform: scale(1.1);
 }
 
 .specifications .spec2 {
     background-color: rgb(24, 24, 24);
     padding: 50px;
     border-radius: 25px;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.specifications .spec2:hover {
+    transform: scale(1.1);
 }
 
 .specifications .spec3 {
     background-color: rgb(24, 24, 24);
     padding: 50px;
     border-radius: 25px;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.specifications .spec3:hover {
+    transform: scale(1.1);
 }
 
 .specifications .spec1:hover {
@@ -157,83 +181,17 @@ nav ul li {
     background-color: rgb(118, 118, 118);
 }
 
-@media screen and (max-width: 768px) {
-    .section-a {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .section-a img {
-        width: 300px;
-        margin-left: 0px;
-    }
-
-    .content {
-        margin-top: 0px;
-    }
-
-    .specifications {
-        grid-template-columns: 1fr;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .specifications .spec1 {
-        margin-bottom: 20px;
-    }
-
-    .specifications .spec2 {
-        margin-bottom: 20px;
-    }
-
-    .specifications .spec3 {
-        margin-bottom: 20px;
-    }
-}
-
-/* make the header responsive for mobile devices */
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    header img {
-        width: 40px;
-        margin-left: 0px;
-    }
-
-    nav {
-        margin-top: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-}
-
 #phone1 {
     width: 300px;
     height: auto;
-    animation: rotateRight 4s  infinite;
+    animation: rotateRight 4s infinite;
     animation-delay: 2s;
 }
-
 
 #phone2 {
     width: 300px;
     height: auto;
-    animation: rotateLeft 4s linear infinite;
+    animation: rotateRight 4s linear infinite;
     animation-delay: 2s;
 }
 
@@ -244,68 +202,6 @@ nav ul li {
     animation-delay: 2s;
 }
 
-.rotateRight {
-    -webkit-animation-name: rotateRight;
-    animation-name: rotateRight;
-  }
-  
-  @-webkit-keyframes rotateRight {
-    0% {
-      opacity: 1;
-      transform-origin: 0 0;
-      transform: perspective(800px) rotateY(0deg) translate3d(0px);
-    }
-    100% {
-      opacity: 1;
-      transform-origin: 50% 0;
-      transform: perspective(800px) rotateY(180deg) translateZ(150px);
-    }
-  }
-  @keyframes rotateRight {
-    0% {
-      opacity: 1;
-      transform-origin: 0 0;
-      transform: perspective(800px) rotateY(0deg) translate3d(0px);
-    }
-    100% {
-      opacity: 1;
-      transform-origin: 50% 0;
-      transform: perspective(800px) rotateY(180deg) translateZ(150px);
-    }
-  }
-
-  .rotateLeft {
-    -webkit-animation-name: rotateLeft;
-    animation-name: rotateLeft;
-  }
-
-    @-webkit-keyframes rotateLeft {
-        0% {
-        opacity: 1;
-        transform-origin: 0 0;
-        transform: perspective(800px) rotateY(0deg) translate3d(0px);
-        }
-        100% {
-        opacity: 1;
-        transform-origin: 50% 0;
-        transform: perspective(800px) rotateY(-180deg) translateZ(150px);
-        }
-    }
-
-    @keyframes rotateLeft {
-        0% {
-        opacity: 1;
-        transform-origin: 0 0;
-        transform: perspective(800px) rotateY(0deg) translate3d(0px);
-        }
-        100% {
-        opacity: 1;
-        transform-origin: 50% 0;
-        transform: perspective(800px) rotateY(-180deg) translateZ(150px);
-        }
-    }
-
-
 
 .video-trailer {
     margin-left: 100px;
@@ -314,6 +210,7 @@ nav ul li {
     -o-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 25px;
     transition: box-shadow 0.3s ease-in-out;
+    animation: glow 1s ease-in-out infinite;
 }
 
 
@@ -325,6 +222,14 @@ nav ul li {
     margin-right: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.reviews:hover {
+    animation: pulse 1s ease-in-out;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
 }
 
 .footer-bottom {
@@ -335,4 +240,168 @@ nav ul li {
     margin-right: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer-bottom:hover {
+    background-color: rgb(47, 206, 63);
+}
+
+
+.section-a .content h2 {
+    font-size: 40px;
+    animation: typing 3s steps(40, end);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.reviews .review1 h2 {
+    animation: glideUp 1s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes glideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes rotateRight {
+    0% {
+        opacity: 1;
+        transform-origin: 0 0;
+        transform: perspective(800px) rotateY(0deg) translate3d(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform-origin: 50% 0;
+        transform: perspective(800px) rotateY(180deg) translateZ(150px);
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px;
+    }
+
+    header .btn {
+        display: none;
+    }
+
+    .section-a {
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 15px;
+        padding: 20px;
+        padding-left: 50px;
+    }
+
+    .video-trailer {
+        display: none;
+    }
+
+    .section-a .content {
+        margin-top: 1px;
+    }
+
+    .section-a .content h2 {
+        font-size: 30px;
+    }
+
+    .section-a .content p {
+        font-size: 15px;
+    }
+
+    .specifications {
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+        margin-right: 5px;
+        padding: 20px;
+        padding-left: 5px;
+        grid-gap: 10px;
+    }
+
+
+    .specifications .spec1 {
+        padding: 30px;
+    }
+
+    .specifications .spec2 {
+        padding: 30px;
+    }
+
+    .specifications .spec3 {
+        padding: 30px;
+    }
+
+    .reviews {
+        margin-left: 30px;
+        margin-right: 15px;
+        padding: 20px;
+        padding-left: 50px;
+    }
+
+    .footer-bottom {
+        margin-left: 30px;
+        margin-right: 15px;
+        padding: 20px;
+        padding-left: 50px;
+    }
 }
