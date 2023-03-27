@@ -29,6 +29,36 @@ body {
 
 .btn:hover {
     background-color: rgb(31, 208, 96);
+    animation: pulse 1s ease-in-out;
+}
+
+.btn:hover span {
+    display: none;
+}
+
+.btn:hover::after {
+    content: "GOOGLE10";
+    display: inline-block;
+    animation: pulse 1s ease-in-out;
+}
+
+.btn2 {
+    background-color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+.btn2:hover {
+    background-color: rgb(31, 208, 96);
     color: rgb(0, 0, 0);
     animation: pulse 1s ease-in-out;
 }
@@ -101,13 +131,12 @@ nav ul li {
     margin-left: 150px;
     margin-right: 150px;
     border-radius: 25px;
-    transition: background-image 0.3s ease-in-out;
+    transition: background-image 5s ease-in-out;
 }
 
 .section-a:hover {
-    background-image: linear-gradient(45deg, rgb(56, 56, 56), rgb(24, 24, 24) 50%, rgb(10, 10, 10));
+    background-image: linear-gradient(45deg, rgb(32, 32, 32) , rgb(18, 18, 18) 50%, rgb(33, 33, 33) );
 }
-
 
 .content h2 {
     font-size: 50px;

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container h1:hover {
+    color: rgb(6, 248, 103);
+}
+
+.container h2:hover {
+    color: rgb(6, 248, 103);
+}
+
+.container p:hover {
+    color: rgb(6, 248, 103);
+}

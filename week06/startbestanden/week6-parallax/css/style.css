@@ -1,0 +1,112 @@
+* {
+  transition: all ease-in-out 0.3s;
+}
+
+@font-face {
+  /* RobotoFlex-VariableFont options: 
+      slnt,wdth,wght,opsz,
+      GRAD,XTRA,YOPQ,YTAS,
+      YTDE,YTFI,YTLC,YTUC */
+  font-family: "RobotoFlex";
+  src: url(RobotoFlex.ttf) format("truetype");
+}
+h1 {
+  font-family: "RobotoFlex";
+  font-size: 3rem;
+  font-variation-settings: "wght" 1000, "wdth" 50;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 300, "wdth" 100;
+}
+
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+main section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+main {
+  perspective: 2px;
+}
+main section {
+  transform-style: preserve-3d;
+}
+main section::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+main section::after#parallax {
+  background-image: url(../images/offf.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main section.no-parallax {
+  background-color: var(--background);
+  z-index: 999;
+}
+
+img {
+  mask-image: url(../images/mask.svg);
+  mask-type: alpha;
+  mask-repeat: repeat-y;
+  mask-size: 300% 100%;
+  mask-position: left;
+  -webkit-mask-image: url(../images/mask.svg);
+  -webkit-mask-type: alpha;
+  -webkit-mask-repeat: repeat-y;
+  -webkit-mask-size: 300% 100%;
+  -webkit-mask-position: left;
+}
+
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/offf.jpg);
+}
+
+.parallax h1 {
+  font-size: 10rem;
+  text-align: center;
+  font-variation-settings: "wght" 700, "wdth" 100;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.06em 0.06em 0px #000000;
+}
+
+.parallax h1:hover {
+  font-variation-settings: "wght" 900, "wdth" 100;
+  text-shadow: 0.06em 0.06em 0px #1fedb6, -0.06em -0.06em 0px #1f41ed;
+}
+
+.home {
+  background-image: url(../images/bg.webp);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home a {
+  text-decoration: none;
+  color: white;
+  font-size: 20rem;
+  font-family: "RobotoFlex";
+  font-variation-settings: "wght" 500, "wdth" 50;
+}
+.home a:hover {
+  font-variation-settings: "wght" 800, "wdth" 100;
+  color: #c01fed;
+}/*# sourceMappingURL=style.css.map */
