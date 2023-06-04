@@ -1,0 +1,168 @@
+body {
+  overflow-x: hidden;
+}
+
+.chest {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10vw;
+}
+
+section#rubereda {
+  height: 390vh;
+  position: relative;
+}
+
+#rubereda .bg {
+  background-image: url(../rubereda/Ocean_BG.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 390vh;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+}
+
+#rubereda h1 {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: "Rubik Bubbles", cursive;
+  font-size: 180px;
+  animation: floatUp 10s ease-in-out infinite;
+}
+
+#scubaDiver {
+  position: absolute;
+  right: 400px;
+  top: 80%;
+  z-index: 9999;
+  width: 100px;
+}
+
+#submarine {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#submarine img {
+  width: 100px;
+}
+
+#smallFish {
+  position: absolute;
+  left: -40px;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+#fish2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 150px;
+  height: auto;
+  transform: translate(-100%, -50%);
+}
+
+#shark {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  z-index: 9999;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  background-color: #5ab8eb;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#dolphin {
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+  width: 150px;
+}
+
+.text2 {
+  position: relative;
+  background-color: #5ab8eb;
+}
+.text2 h2 {
+  position: absolute;
+  top: 370px;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text3 {
+  position: relative;
+  background-color: #5ab8eb;
+}
+.text3 h2 {
+  position: absolute;
+  top: 870px;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text4 {
+  position: relative;
+  background-color: #5ab8eb;
+}
+.text4 h2 {
+  position: absolute;
+  top: 1370px;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text5 {
+  position: relative;
+  background-color: #5ab8eb;
+}
+.text5 h2 {
+  position: absolute;
+  top: 2170px;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text6 {
+  position: relative;
+  background-color: #5ab8eb;
+}
+.text6 h2 {
+  position: absolute;
+  top: 3070px;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-3000px);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=rubereda.css.map */
